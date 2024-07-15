@@ -1,0 +1,14 @@
+.dropdown {
+  padding: 10px;
+  border: 2px solid var(--clr-primary-400);
+  background-color: aliceblue;
+  color: var(--clr-primary-400);
+  margin-bottom: 5px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.dropdown:focus {
+  border: 0;
+  border: 2px solid var(--clr-accent-400);
+}

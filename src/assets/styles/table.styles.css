@@ -1,0 +1,127 @@
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow-x: scroll;
+}
+
+.table-header {
+  background-color: var(--clr-primary-400);
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-top: 1px solid var(--clr-primary-400);
+  color: var(--clr-accent-400);
+  white-space: nowrap;
+}
+
+.table-header:first-child {
+  border-left: 1px solid var(--clr-primary-400);
+}
+
+.table-header:last-child {
+  border-right: 1px solid var(--clr-primary-400);
+}
+
+.table-body .table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-cell {
+  padding: 8px;
+  border: 1px solid var(--clr-primary-400);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 150px;
+}
+
+.action-icon {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  margin: 2px;
+  padding: 8px 12px;
+  border: none;
+  font-weight: bold;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-accent-400);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--clr-primary-400);
+}
+
+.pagination button:disabled {
+  background-color: #e2e2e2;
+  cursor: not-allowed;
+}
+
+.pagination input {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pagination select {
+  margin-left: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .table-cell,
+  .table-header {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .pagination {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  .pagination button,
+  .pagination input,
+  .pagination select {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.container_table {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.option:focus {
+  background-color: var(--clr-accent-400);
+  color: var(--clr-primary-400);
+}
+
+select {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-accent-400);
+  border: 0;
+}

@@ -1,8 +1,8 @@
 import { MutatingDots } from "react-loader-spinner";
-
+import "../assets/styles/loader.styles.css";
 const Loader = () => {
   return (
-    <div className="container">
+    <div className="loader-container">
       <MutatingDots
         visible={true}
         height="100"
