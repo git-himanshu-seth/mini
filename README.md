@@ -1,7 +1,13 @@
 # Setup the project
 
 1. Clone the project
-2. Create a file .env and store VITE_API_URL=http://localhost:8080/mini-project/api/v1/ for backend connection
+2. Create .env file and add pedepndenies
+
+```
+VITE_API_URL=<api_prefix>
+
+```
+
 3. Run `npm install`
 4. Run `npm run dev` to start the project
 5. Run `npm run build` to build the project
