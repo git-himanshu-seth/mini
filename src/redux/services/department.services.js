@@ -62,7 +62,7 @@ async function getDepartments({ activePageNumber, documentSkip }) {
     true
   );
   return await fetch(
-    `${apiUrl}/department?page=${activePageNumber}&limit=${documentSkip}`,
+    `${apiUrl}department?page=${activePageNumber}&limit=${documentSkip}`,
     requestOptions
   ).then((response) => response.json());
 }

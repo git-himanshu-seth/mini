@@ -52,12 +52,17 @@ const Departments = () => {
   const userData = useSelector((state) => state.user.value);
 
   const departmentData = useSelector((state) => {
-    return state?.department?.value?.departments.map((department) => {
-      return {
-        label: department.department_name,
-        value: department._id,
-      };
-    });
+    if (
+      state?.department?.value?.departments?.length &&
+      state?.department?.value?.departments?.length > 0
+    ) {
+      return state?.department?.value?.departments.map((department) => {
+        return {
+          label: department.department_name,
+          value: department._id,
+        };
+      });
+    }
   });
 
   const employeesData = useSelector((state) => state?.employees?.value);
